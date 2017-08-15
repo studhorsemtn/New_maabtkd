@@ -1,0 +1,58 @@
+/* =======  Global  ======== */
+
+body {
+    background-color: rgba(2, 28, 37, 0.40);
+    padding-top: 70px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+
+/* =======  End Global  ======== */
+
+
+/* ========  NavBar  ======== */
+
+#facebook {
+    color: #3b5998;
+}
+
+#phone {
+    color: rgb(219, 27, 27)
+}
+
+.navbar-brand img {
+    padding: 0px;
+}
+
+.navbar-right {
+    margin: 5px 15px;
+}
+
+#collapse {
+    color: white;
+}
+
+
+/* ========  End NavBar  ======== */
+
+
+/* =========  Jumbotron  ========= */
+
+#home {
+    background: url('Images/maabtkdBackground.png') center center fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -2px -2px 0 black;
+}
+
+#hometext {
+    font-weight: bolder;
+    -webkit-font-smoothing: antialiased;
+    padding: 20rem 0 0 0;
+}
