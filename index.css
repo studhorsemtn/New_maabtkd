@@ -128,3 +128,41 @@ hr {
 
 
 /* ========  End Instructors  ======= */
+
+
+/* =======  Taekwondo/Judo  ======= */
+
+.tkd {
+    color: black;
+    background: -webkit-linear-gradient(white, grey);
+}
+
+@media only screen and (orientation: portrait) {
+    .tkd h1,
+    .judo h1 {
+        font-size: 1.25em;
+        font-weight: bolder;
+    }
+}
+
+.tkd h1 {
+    font-weight: bolder;
+}
+
+.judo {
+    color: white;
+    background: -webkit-linear-gradient(grey, black);
+}
+
+.tkd img {
+    display: table;
+    margin: 0 auto;
+}
+
+.judo img {
+    display: table;
+    margin: 0 auto;
+}
+
+
+/* =======   End Taekwondo/Judo  ======= */
