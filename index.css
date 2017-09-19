@@ -15,6 +15,10 @@ hr {
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0.00), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.00));
 }
 
+section {
+    padding: 2.5rem;
+}
+
 
 /* =======  End Global  ======== */
 
@@ -166,3 +170,17 @@ hr {
 
 
 /* =======   End Taekwondo/Judo  ======= */
+
+
+/* =======  Footer  ======== */
+
+footer {
+    background: #656363;
+    color: #DA700A;
+}
+
+footer i,
+footer p {
+    color: white;
+    text-align: center;
+}
