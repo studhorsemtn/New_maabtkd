@@ -1,186 +1,161 @@
-/* =======  Global  ======== */
+    /* =======  Global  ======== */
 
-body {
-    font-family: 'Baskerville Old Face', serif;
-    font-size: 1.65em;
-    background-color: rgba(2, 28, 37, 0.40);
-    padding-top: 70px;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-}
+    body {
+        font-family: 'Baskerville Old Face', serif;
+        font-size: 1.65em;
+        background-color: rgba(2, 28, 37, 0.40);
+        padding-top: 70px;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+    }
 
-hr {
-    border: 2px;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.00), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.00));
-}
+    hr {
+        border: 2px;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0.00), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.00));
+    }
 
-section {
-    padding: 2.5rem;
-}
+    section {
+        padding: 2.5rem;
+    }
+    /* =======  End Global  ======== */
+    /* ========  NavBar  ======== */
 
+    #facebook {
+        color: #3b5998;
+    }
 
-/* =======  End Global  ======== */
+    #phone {
+        color: rgb(219, 27, 27)
+    }
 
+    .navbar-brand img {
+        padding: 2px 15px;
+    }
 
-/* ========  NavBar  ======== */
+    .navbar-right {
+        margin: 5px 15px;
+    }
 
-#facebook {
-    color: #3b5998;
-}
+    #collapse {
+        color: white;
+    }
+    /* ========  End NavBar  ======== */
+    /* =========  Jumbotron Home  ========= */
 
-#phone {
-    color: rgb(219, 27, 27)
-}
+    #home {
+        width: 50%;
+        height: auto;
+        color: rgb(255, 255, 255);
+        background: url('Images/maabtkdBackground.png') no-repeat;
+        background-size: 100% 100%;
+        margin: 0 0 10px 0;
+    }
 
-.navbar-brand img {
-    padding: 2px 15px;
-}
+    #hometext {
+        -webkit-font-smoothing: antialiased;
+        padding: 10px 0 0 0;
+        text-shadow: -1px -1px 0px #000000;
+        padding: 0 0 0 0;
+    }
+    /* =======  End Jumbotron Home  ======== */
+    /* =======  Section About  ======= */
 
-.navbar-right {
-    margin: 5px 15px;
-}
-
-#collapse {
-    color: white;
-}
-
-
-/* ========  End NavBar  ======== */
-
-
-/* =========  Jumbotron Home  ========= */
-
-#home {
-    color: rgb(255, 255, 255);
-    text-shadow: -1px -1px 0px #000000;
-    padding: 0 0 18rem 0;
-    background: url('Images/maabtkdBackground2.png') no-repeat;
-    background-size: 100% 100%;
-    background-position: top center;
-    height: auto;
-    width: 100%;
-    margin: 0 0 9px 0;
-}
-
-#hometext {
-    -webkit-font-smoothing: antialiased;
-    padding: 10rem 0 0 0;
-}
-
-
-/* =======  End Jumbotron Home  ======== */
-
-
-/* =======  Section About  ======= */
-
-.about,
-.panel {
-    background: black;
-    color: white;
-    font-weight: bolder;
-}
-
-.about h1 {
-    padding: 9% 0;
-}
-
-#training {
-    padding: 15px 15px 37px 15px;
-}
-
-
-/* =======  End About  ======= */
-
-
-/* ========  Instructors  ======= */
-
-#eve em {
-    color: rgba(255, 252, 0, 0.65);
-}
-
-#instructorInfo {
-    min-height: 350px;
-    text-align: center;
-    color: red;
-    background: -webkit-linear-gradient(black, grey, black);
-    background-size: cover;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-}
-
-#instructorInfo h1 {
-    margin: 4px 0 0 0;
-}
-
-#instructorInfo small {
-    color: white;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-}
-
-#instructorInfo p {
-    color: white;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-}
-
-.instructorpic {
-    display: table;
-    margin: 0 auto;
-}
-
-
-/* ========  End Instructors  ======= */
-
-
-/* =======  Taekwondo/Judo  ======= */
-
-.tkd {
-    color: black;
-    background: -webkit-linear-gradient(white, grey);
-}
-
-@media only screen and (orientation: portrait) {
-    .tkd h1,
-    .judo h1 {
-        font-size: 1.25em;
+    .about,
+    .panel {
+        background: black;
+        color: white;
         font-weight: bolder;
     }
-}
 
-.tkd h1 {
-    font-weight: bolder;
-}
+    .about h1 {
+        padding: 9% 0;
+    }
 
-.judo {
-    color: white;
-    background: -webkit-linear-gradient(grey, black);
-}
+    #training {
+        padding: 15px 15px 37px 15px;
+    }
+    /* =======  End About  ======= */
+    /* ========  Instructors  ======= */
 
-.tkd img {
-    display: table;
-    margin: 0 auto;
-}
+    #eve em {
+        color: rgba(255, 252, 0, 0.65);
+    }
 
-.judo img {
-    display: table;
-    margin: 0 auto;
-}
+    #instructorInfo {
+        min-height: 350px;
+        text-align: center;
+        color: red;
+        background: -webkit-linear-gradient(black, grey, black);
+        background-size: cover;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+    }
 
+    #instructorInfo h1 {
+        margin: 4px 0 0 0;
+    }
 
-/* =======   End Taekwondo/Judo  ======= */
+    #instructorInfo small {
+        color: white;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+    }
 
+    #instructorInfo p {
+        color: white;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+    }
 
-/* =======  Footer  ======== */
+    .instructorpic {
+        display: table;
+        margin: 0 auto;
+    }
+    /* ========  End Instructors  ======= */
+    /* =======  Taekwondo/Judo  ======= */
 
-footer {
-    background: #656363;
-    color: #DA700A;
-}
+    .tkd {
+        color: black;
+        background: -webkit-linear-gradient(white, grey);
+    }
 
-footer i,
-footer p {
-    color: white;
-    text-align: center;
-}
+    @media only screen and (orientation: portrait) {
+        .tkd h1,
+        .judo h1 {
+            font-size: 1.25em;
+            font-weight: bolder;
+        }
+    }
+
+    .tkd h1 {
+        font-weight: bolder;
+    }
+
+    .judo {
+        color: white;
+        background: -webkit-linear-gradient(grey, black);
+    }
+
+    .tkd img {
+        display: table;
+        margin: 0 auto;
+    }
+
+    .judo img {
+        display: table;
+        margin: 0 auto;
+    }
+    /* =======   End Taekwondo/Judo  ======= */
+    /* =======  Footer  ======== */
+
+    footer {
+        background: #656363;
+        color: #DA700A;
+    }
+
+    footer i,
+    footer p {
+        color: white;
+        text-align: center;
+    }
