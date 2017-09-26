@@ -3,7 +3,10 @@
     body {
         font-family: 'Baskerville Old Face', serif;
         font-size: 1.65em;
-        background-color: rgba(2, 28, 37, 0.40);
+        background: -webkit-linear-gradient(black, grey, black);
+        background: -moz-linear-gradient(black, grey, black);
+        background: -o-linear-gradient(black, grey, black);
+        background: linear-gradient(black, grey, black);
         padding-top: 70px;
         -webkit-font-smoothing: antialiased;
         text-rendering: optimizeLegibility;
@@ -43,20 +46,35 @@
     /* ========  End NavBar  ======== */
     /* =========  Jumbotron Home  ========= */
 
+    #homewrapper {
+        background: #E99D46;
+    }
+
     #home {
-        width: 50%;
-        height: auto;
+        height: 350px;
         color: rgb(255, 255, 255);
         background: url('Images/maabtkdBackground.png') no-repeat;
         background-size: 100% 100%;
+        border: 2px solid black;
+        border-radius: 10px;
         margin: 0 0 10px 0;
     }
 
     #hometext {
         -webkit-font-smoothing: antialiased;
-        padding: 10px 0 0 0;
+        color: white;
+        text-align: center;
         text-shadow: -1px -1px 0px #000000;
         padding: 0 0 0 0;
+    }
+
+    #hometext h1 {
+        padding: 20px 0 0 0;
+        font-size: 3rem;
+    }
+
+    #hometext p {
+        font-size: 2rem;
     }
     /* =======  End Jumbotron Home  ======== */
     /* =======  Section About  ======= */
@@ -87,6 +105,9 @@
         text-align: center;
         color: red;
         background: -webkit-linear-gradient(black, grey, black);
+        background: -moz-linear-gradient(black, grey, black);
+        background: -o-linear-gradient(black, grey, black);
+        background: linear-gradient(black, grey, black);
         background-size: cover;
         -webkit-font-smoothing: antialiased;
         text-rendering: optimizeLegibility;
