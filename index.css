@@ -28,7 +28,7 @@ section {
 
 /* ========  NavBar  ======== */
 
-#facebook {
+.facebook {
     color: #3b5998;
 }
 
@@ -72,6 +72,10 @@ section {
     .collapse.in {
         display: block !important;
     }
+}
+
+.navbar-brand img {
+    padding: 2px 0 0 0;
 }
 
 .navbar-right {
@@ -124,7 +128,6 @@ section {
 
 /* =======  Section About  ======= */
 
-.about,
 .panel {
     background: black;
     color: white;
@@ -132,6 +135,7 @@ section {
 }
 
 .about h1 {
+    color: white;
     padding: 9% 0;
 }
 
@@ -233,7 +237,8 @@ footer {
 }
 
 footer i,
-footer p {
+footer p,
+footer a {
     color: white;
     text-align: center;
 }
