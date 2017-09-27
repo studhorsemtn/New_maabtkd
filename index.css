@@ -103,6 +103,7 @@ section {
     background-size: 100% 100%;
     border: 2px solid black;
     border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
     margin: 0 0 10px 0;
 }
 
@@ -134,9 +135,13 @@ section {
     font-weight: bolder;
 }
 
-.about h1 {
-    color: white;
+.about {
     padding: 9% 0;
+    color: white;
+    background: -webkit-linear-gradient(black, grey, black);
+    background: -moz-linear-gradient(black, grey, black);
+    background: -o-linear-gradient(black, grey, black);
+    background: linear-gradient(black, grey, black);
 }
 
 #training {
@@ -227,6 +232,36 @@ section {
 
 
 /* =======   End Taekwondo/Judo  ======= */
+
+
+/* ========  Schedule  ======== */
+
+#schedule {
+    color: black;
+    font-weight: bolder;
+}
+
+#schedule th {
+    background: black;
+}
+
+#schedule h1,
+thead {
+    color: white;
+}
+
+#schedule th,
+tr {
+    border: 2px solid black;
+    text-align: center;
+}
+
+#schedule hr {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.00), rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.00));
+}
+
+
+/* ========  End Schedule  ======== */
 
 
 /* =======  Footer  ======== */
