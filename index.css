@@ -1,182 +1,239 @@
-    /* =======  Global  ======== */
+/* =======  Global  ======== */
 
-    body {
-        font-family: 'Baskerville Old Face', serif;
-        font-size: 1.65em;
-        background: -webkit-linear-gradient(black, grey, black);
-        background: -moz-linear-gradient(black, grey, black);
-        background: -o-linear-gradient(black, grey, black);
-        background: linear-gradient(black, grey, black);
-        padding-top: 70px;
-        -webkit-font-smoothing: antialiased;
-        text-rendering: optimizeLegibility;
+body {
+    font-family: 'Baskerville Old Face', serif;
+    font-size: 1.65em;
+    background: -webkit-linear-gradient(black, grey, black);
+    background: -moz-linear-gradient(black, grey, black);
+    background: -o-linear-gradient(black, grey, black);
+    background: linear-gradient(black, grey, black);
+    padding-top: 70px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+hr {
+    border: 2px;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.00), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.00));
+}
+
+section {
+    padding: 2.5rem;
+}
+
+
+/* =======  End Global  ======== */
+
+
+/* ========  NavBar  ======== */
+
+#facebook {
+    color: #3b5998;
+}
+
+#phone {
+    color: rgb(219, 27, 27)
+}
+
+@media (max-width: 1200px) {
+    .navbar-header {
+        float: none;
     }
-
-    hr {
-        border: 2px;
-        height: 1px;
-        background-image: linear-gradient(to right, rgba(255, 255, 255, 0.00), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.00));
-    }
-
-    section {
-        padding: 2.5rem;
-    }
-    /* =======  End Global  ======== */
-    /* ========  NavBar  ======== */
-
-    #facebook {
-        color: #3b5998;
-    }
-
-    #phone {
-        color: rgb(219, 27, 27)
-    }
-
-    .navbar-brand img {
-        padding: 2px 15px;
-    }
-
+    .navbar-left,
     .navbar-right {
-        margin: 5px 15px;
+        float: none !important;
     }
-
-    #collapse {
-        color: white;
+    .navbar-toggle {
+        display: block;
     }
-    /* ========  End NavBar  ======== */
-    /* =========  Jumbotron Home  ========= */
-
-    #homewrapper {
-        background: #E99D46;
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
     }
-
-    #home {
-        height: 350px;
-        color: rgb(255, 255, 255);
-        background: url('Images/maabtkdBackground.png') no-repeat;
-        background-size: 100% 100%;
-        border: 2px solid black;
-        border-radius: 10px;
-        margin: 0 0 10px 0;
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
     }
-
-    #hometext {
-        -webkit-font-smoothing: antialiased;
-        color: white;
-        text-align: center;
-        text-shadow: -1px -1px 0px #000000;
-        padding: 0 0 0 0;
+    .navbar-collapse.collapse {
+        display: none!important;
     }
-
-    #hometext h1 {
-        padding: 20px 0 0 0;
-        font-size: 3rem;
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
     }
-
-    #hometext p {
-        font-size: 2rem;
+    .navbar-nav>li {
+        float: none;
     }
-    /* =======  End Jumbotron Home  ======== */
-    /* =======  Section About  ======= */
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in {
+        display: block !important;
+    }
+}
 
-    .about,
-    .panel {
-        background: black;
-        color: white;
+.navbar-right {
+    margin: 5px 15px;
+}
+
+#collapse {
+    color: white;
+}
+
+
+/* ========  End NavBar  ======== */
+
+
+/* =========  Jumbotron Home  ========= */
+
+#homewrapper {
+    background: #C25E01;
+}
+
+#home {
+    height: 350px;
+    color: rgb(255, 255, 255);
+    background: url('Images/maabtkdBackground.png') no-repeat;
+    background-size: 100% 100%;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 0 0 10px 0;
+}
+
+#hometext {
+    -webkit-font-smoothing: antialiased;
+    color: white;
+    text-align: center;
+    text-shadow: -1px -1px 0px #000000;
+}
+
+#hometext h1 {
+    padding: 5px 0 5px 0;
+    font-size: 3rem;
+}
+
+#hometext p {
+    font-size: 2rem;
+}
+
+
+/* =======  End Jumbotron Home  ======== */
+
+
+/* =======  Section About  ======= */
+
+.about,
+.panel {
+    background: black;
+    color: white;
+    font-weight: bolder;
+}
+
+.about h1 {
+    padding: 9% 0;
+}
+
+#training {
+    padding: 15px 15px 37px 15px;
+}
+
+
+/* =======  End About  ======= */
+
+
+/* ========  Instructors  ======= */
+
+#eve em {
+    color: rgba(255, 252, 0, 0.65);
+}
+
+#instructorInfo {
+    min-height: 350px;
+    text-align: center;
+    color: red;
+    background: -webkit-linear-gradient(black, grey, black);
+    background: -moz-linear-gradient(black, grey, black);
+    background: -o-linear-gradient(black, grey, black);
+    background: linear-gradient(black, grey, black);
+    background-size: cover;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+#instructorInfo h1 {
+    margin: 4px 0 0 0;
+}
+
+#instructorInfo small {
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+#instructorInfo p {
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+.instructorpic {
+    display: table;
+    margin: 0 auto;
+}
+
+
+/* ========  End Instructors  ======= */
+
+
+/* =======  Taekwondo/Judo  ======= */
+
+.tkd {
+    color: black;
+    background: -webkit-linear-gradient(white, grey);
+}
+
+@media only screen and (orientation: portrait) {
+    .tkd h1,
+    .judo h1 {
+        font-size: 1.25em;
         font-weight: bolder;
     }
+}
 
-    .about h1 {
-        padding: 9% 0;
-    }
+.tkd h1 {
+    font-weight: bolder;
+}
 
-    #training {
-        padding: 15px 15px 37px 15px;
-    }
-    /* =======  End About  ======= */
-    /* ========  Instructors  ======= */
+.judo {
+    color: white;
+    background: -webkit-linear-gradient(grey, black);
+}
 
-    #eve em {
-        color: rgba(255, 252, 0, 0.65);
-    }
+.tkd img {
+    display: table;
+    margin: 0 auto;
+}
 
-    #instructorInfo {
-        min-height: 350px;
-        text-align: center;
-        color: red;
-        background: -webkit-linear-gradient(black, grey, black);
-        background: -moz-linear-gradient(black, grey, black);
-        background: -o-linear-gradient(black, grey, black);
-        background: linear-gradient(black, grey, black);
-        background-size: cover;
-        -webkit-font-smoothing: antialiased;
-        text-rendering: optimizeLegibility;
-    }
+.judo img {
+    display: table;
+    margin: 0 auto;
+}
 
-    #instructorInfo h1 {
-        margin: 4px 0 0 0;
-    }
 
-    #instructorInfo small {
-        color: white;
-        -webkit-font-smoothing: antialiased;
-        text-rendering: optimizeLegibility;
-    }
+/* =======   End Taekwondo/Judo  ======= */
 
-    #instructorInfo p {
-        color: white;
-        -webkit-font-smoothing: antialiased;
-        text-rendering: optimizeLegibility;
-    }
 
-    .instructorpic {
-        display: table;
-        margin: 0 auto;
-    }
-    /* ========  End Instructors  ======= */
-    /* =======  Taekwondo/Judo  ======= */
+/* =======  Footer  ======== */
 
-    .tkd {
-        color: black;
-        background: -webkit-linear-gradient(white, grey);
-    }
+footer {
+    background: #656363;
+    color: #DA700A;
+}
 
-    @media only screen and (orientation: portrait) {
-        .tkd h1,
-        .judo h1 {
-            font-size: 1.25em;
-            font-weight: bolder;
-        }
-    }
-
-    .tkd h1 {
-        font-weight: bolder;
-    }
-
-    .judo {
-        color: white;
-        background: -webkit-linear-gradient(grey, black);
-    }
-
-    .tkd img {
-        display: table;
-        margin: 0 auto;
-    }
-
-    .judo img {
-        display: table;
-        margin: 0 auto;
-    }
-    /* =======   End Taekwondo/Judo  ======= */
-    /* =======  Footer  ======== */
-
-    footer {
-        background: #656363;
-        color: #DA700A;
-    }
-
-    footer i,
-    footer p {
-        color: white;
-        text-align: center;
-    }
+footer i,
+footer p {
+    color: white;
+    text-align: center;
+}
