@@ -11,9 +11,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="icon" href="Images/MAABfavicon.ico" type="image/gif" sizes="16x16">
+
+    
+
 </head>
 
 <body>
+
+    
+
     <!-- =======  Navbar  ======= -->
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -42,7 +48,7 @@
                         <a href="tkd.html">Taekwondo/Judo</a>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Members
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Videos
                             <i class="fa fa-caret-down"></i>
                         </a>
                         <ul class="dropdown-menu">
@@ -94,8 +100,11 @@
     <!--=======> End Navbar <=======-->
 
 
-    <section>
-
+    <section class="login">
+    <h1>Welcome to MAABTKD Members Section</h1>
+    <br>
+    <h4>Please Click on Videos for the Taekwondo Forms and Judo Throws</h4>
+    <?php require 'login.php'; ?>
     </section>
 
     <!-- Begin Footer -->
