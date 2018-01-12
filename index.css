@@ -264,6 +264,21 @@ tr {
 /* ========  End Schedule  ======== */
 
 
+/* Section Login */
+
+.login {
+    color: #C25E01;
+    text-align: center;
+}
+
+.login h4 {
+    color: white;
+}
+
+
+/* End Section Login */
+
+
 /* =======  Footer  ======== */
 
 footer {
