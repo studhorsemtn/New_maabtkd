@@ -1,3 +1,30 @@
+
+<?php
+session_start();
+
+
+if (isset($_POST['password'])) {
+    $pass = $_POST['password'];
+    if ($pass == 'nunchucks') {
+        $_SESSION['pass'] = $pass;
+        header('location: members.php'); 
+    }
+    else{
+        
+        $error = "Incorrect Password";        
+        header('location: login.php');
+        echo $error;
+       
+        
+    }
+}
+
+if(!isset($_SESSION['pass'])){
+    header('Location: login.php');
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,6 +44,7 @@
 </head>
 
 <body>
+
 
     
 
@@ -104,7 +132,7 @@
     <h1>Welcome to MAABTKD Members Section</h1>
     <br>
     <h4>Please Click on Videos for the Taekwondo Forms and Judo Throws</h4>
-    <?php require 'login.php'; ?>
+    
     </section>
 
     <!-- Begin Footer -->

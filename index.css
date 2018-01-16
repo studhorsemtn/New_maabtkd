@@ -269,10 +269,28 @@ tr {
 .login {
     color: #C25E01;
     text-align: center;
+    text-shadow: -.05em -.05em .2em rgb(0, 0, 0);
+    margin-bottom: 15%;
 }
 
 .login h4 {
     color: white;
+}
+
+.loginForm {
+    max-width: 350px;
+    height: auto;
+    background: rgb(78, 75, 75);
+    margin: 0 auto;
+    border-radius: 5%;
+}
+
+input[type='password'] {
+    margin: 15px;
+}
+
+button[type="submit"] {
+    margin-bottom: 15px;
 }
 
 
@@ -284,6 +302,7 @@ tr {
 footer {
     background: #656363;
     color: #DA700A;
+    bottom: 0;
 }
 
 footer i,
