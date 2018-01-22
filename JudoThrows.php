@@ -6,15 +6,10 @@ session_start();
 if (isset($_SESSION['pass'])) {   
     
         header('location: members.php'); 
+    }else {
+        header('Location: login.php');
     }
-    else{
-        $error = 'You Entered the Incorrect Password!';
-        $_SESSION['error'] = $error;        
-        header('location: login.php');
-       
-        
-    }
-
+    
 ?>
 
 
@@ -181,7 +176,7 @@ if (isset($_SESSION['pass'])) {
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="main.js"></script>
+    
 </body>
 
 </html>
