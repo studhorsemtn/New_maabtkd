@@ -81,10 +81,10 @@ if(!isset($_SESSION['pass'])){
                         </a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="TKDForms.html">TKD Forms</a>
+                                <a href="TKDForms.php">TKD Forms</a>
                             </li>
                             <li>
-                                <a href="JudoThows.html">Judo Throws</a>
+                                <a href="JudoThows.php">Judo Throws</a>
                             </li>
                         </ul>
 
@@ -132,6 +132,9 @@ if(!isset($_SESSION['pass'])){
     <h1>Welcome to MAABTKD Members Section</h1>
     <br>
     <h4>Please Click on Videos for the Taekwondo Forms and Judo Throws</h4>
+
+    <br>
+    <button class= "btn btn-lg" type="submit" name="logout"><a href="logout.php">Log Out</a></button>
     
     </section>
 
@@ -183,7 +186,7 @@ if(!isset($_SESSION['pass'])){
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="main.js"></script>
+    
 </body>
 
 </html>

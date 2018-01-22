@@ -17,10 +17,15 @@ if (isset($_POST['password'])) {
         
     }
 }
+
+if (isset($_SESSION['pass'])) {
+    header('Location: members.php');
+}
+
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 
 <head>
     <meta charset="UTF-8">
@@ -30,7 +35,7 @@ if (isset($_POST['password'])) {
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="login.css">    
     <link rel="icon" href="Images/MAABfavicon.ico" type="image/gif" sizes="16x16">
 
     
@@ -109,24 +114,30 @@ if (isset($_POST['password'])) {
 
 
     <section class="login">
+
+    
     <h1>Welcome to MAABTKD Members Section</h1>
     <br>
-    <div class="container">
+    <!-- <div class="container">
+
+    <?php 
+        if($_SESSION['pass'] != 'nunchucks'){
+            $error = $_SESSION['error'];
+            echo "<h4>$error</h4>";
+        }
+    ?>
+
         <form class="loginForm" method="post" action="login.php" role="form">
             <input type="password" name="password" required autofocus>
             <br>
            <button class= "btn btn-lg" type="submit" name="submit">Hajime</button>
         </form>
 
-    </div>
+    </div> -->
     <br>
-    <h4>Please Log In with the Password</h4>   
-    <?php 
-        if(isset($_SESSION['error']) && $_SESSION['pass'] != 'nunchucks'){
-            $error = $_SESSION['error'];
-            echo "<h4>$error</h4>";
-        }
-    ?>
+    <h1>This Page is Still Under Construction as We Are Generating Unique and Interesting Content!</h1>  
+    <h1>Stay Tuned!</h1> 
+    
     </section>
 
     
@@ -181,7 +192,7 @@ if (isset($_POST['password'])) {
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="main.js"></script>
+    
 </body>
 
 </html>
