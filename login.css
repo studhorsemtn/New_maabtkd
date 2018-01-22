@@ -1,11 +1,18 @@
 body {
     font-family: 'Baskerville Old Face', serif;
     font-size: 1.65em;
+    background: -webkit-linear-gradient(black, grey, black);
+    background: -moz-linear-gradient(black, grey, black);
+    background: -o-linear-gradient(black, grey, black);
+    background: linear-gradient(black, grey, black);
     padding-top: 70px;
-    background: url(Images/underConstruction.svg) no-repeat center fixed;
-    background-size: cover;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+    height: 100vh;
+}
+
+html {
+    height: 100vh;
 }
 
 hr {
@@ -92,7 +99,7 @@ section {
     color: #C25E01;
     text-align: center;
     text-shadow: -.05em -.05em .2em rgb(0, 0, 0);
-    margin-bottom: 15%;
+    padding-bottom: 15%;
 }
 
 .login h4 {
