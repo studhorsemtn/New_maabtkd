@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Maabtkd Schedule &amp; Fees</title>
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="icon" href="Images/MAABfavicon.ico" type="image/gif" sizes="16x16">
+</head>
+
+<body>
+    <!-- =======  Navbar  ======= -->
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!-- toggle Button [opens navbar links on mobile devices] -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#tjdropdown" aria-expanded="false">
+                    <i class="fa fa-bars fa-lg" aria-hidden="true" id="collapse"></i>
+                </button>
+                <a href="index.html" class="navbar-brand center-block">
+                    <img class="img-responsive " src="Images/lightLogo.png" alt="Martial Arts of Billings logo">
+                </a>
+            </div>
+
+            <!-- Navbar Collapse [conatins components of the navbar such as navbar menu and forms] -->
+            <div class="collapse navbar-collapse" id="tjdropdown">
+                <!-- Navbar Menu -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="instructors.html">Instructors</a>
+                    </li>
+                    <li>
+                        <a href="tkd.html">Taekwondo/Judo</a>
+                    </li>
+                    <li class="active">
+                        <a href="schedule.html">Schedule &nbsp;&#38;&nbsp;Fees</a>
+                    </li>
+                    <li>
+                        <a href="login.php">Members</a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/Martial-Arts-Academy-of-Billings-123484254472217/" target="_blank">
+                            <i class="fa fa-facebook-square fa-lg facebook"></i>
+                            <small>&nbsp;See us on Facebook&#33;</small>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact Us
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="tel:+1-406-591-9000">
+                                    <i class="fa fa-mobile fa-lg" id="phone"></i>&nbsp; Call Us to find out more&#33;</a>
+                            </li>
+                            <li>
+                                <a href="https://goo.gl/maps/9FNh8wJVV572" target="_blank">
+                                    <i class="fa fa-map-marker fa-lg" id="directions"></i>&nbsp;Come Join Us&#33;</a>
+                            </li>
+                            <li>
+                                <a href="mailto:maabtkd@gmail.com" target="_blank">
+                                    <i class="fa fa-envelope fa-lg" id="email"></i>&nbsp;Email</a>
+                            </li>
+                        </ul>
+                        <!-- End Dropdown Menu -->
+                    </li>
+                    <!-- End Dropdown -->
+                </ul>
+                <!-- End Navbar Menu -->
+            </div>
+            <!-- End Navbar Collapse -->
+        </div>
+        <!-- End Container-Fluid -->
+    </nav>
+    <!--=======> End Navbar <=======-->
+
+
+    <!-- ========  Schedule  ======== -->
+
+    <section id="schedule">
+        <h1 class="text-center">Schedule &amp; Fees</h1>
+        <div class="container">
+            <div class="col-lg-12 table-responsive">
+                <table class="table">
+                    <thead class="">
+                        <tr>
+                            <th>Days of Week</th>
+                            <th>Time</th>
+                            <th>Class</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td class="success" style="background:white;">Monday and Wednesday</td>
+                            <td class="warning">4:25pm-5:25pm
+                                <hr> 5:30pm-6:30pm
+                                <hr> 6:30pm-7:30pm
+                                <!-- <hr> Wednesdays-Seasonal 7:30pm-8:30pm -->
+                            </td>
+                            <td class="danger">
+                                Beginning Juniors &amp; Little Dragons
+                                <hr> Beginning Juniors
+                                <hr> Combined All Ages &amp; Beginning Adults
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td class="success" style="background:white;">Tuesday and Thursday</td>
+                            <td class="warning">12:00pm-1:00pm
+                                <hr>5:30pm-6:30pm
+                                <br>
+                                <br>
+                                <br>
+                                <hr> 6:30pm-7:30pm
+                                <br>
+                                <br>
+                                <hr> 7:30pm-8:30pm
+                            </td>
+                            <td class="danger">
+                                Combined All Ages
+                                <hr>Beginning Juniors Judo
+                                <br>Intermediate/Advanced Juniors Taekwondo
+                                <hr> Advanced Adults TKD
+                                <br> Intermediate/Advanced Juniors Judo
+                                <hr> Adult Judo
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="success" id="feeTerms">
+                                <strong>
+                                    Family:
+                                    <hr>
+                                    <br>
+                                    <br>
+                                    <br> Paying Monthly:
+                                    <hr> Sign-Up Fee:
+                                </strong>
+                            </td>
+                            <td class="danger" id="fees">
+
+                                $250 each for first 2 members
+                                <p style="color: red;">(4 months fees and uniform for initial 2 memebers . Each additional member must buy uniform)</p>
+                                <hr>
+                                <br> $75
+                                <hr>
+                                <br> $250
+                                <p style="color: red;">(Includes 4 months fees and a uniform)</p>
+                            </td>
+                            <td class="warning" id="nothing">
+                            </td>
+
+
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- =======  End Table  ======== -->
+            </div>
+            <!-- =======  End Table-Responsive  ======= -->
+        </div>
+        <!-- End Container -->
+
+        <div class="container-fluid">
+            <iframe id="242737606" src="http://www.google.com/calendar/embed?src=maabtkd.com_qmgfp42qskam6dankhvj55g75s@group.calendar.google.com&amp;color=%23668CD9&amp;mode=MONTH&amp;showTitle=0&amp;showNav=1&amp;showDate=1&amp;showTabs=1&amp;showCalendars=0&amp;hl=en"
+                title="Calendar of Events" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <img class="img-responsive center-block" src="Images/lightLogo.png" alt="Martial Arts Academy of Billings">
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-4 text-center">
+                    <i class="fa fa-mobile fa-2x "></i>
+                    <h4>Call Us Now!</h4>
+                    <h4>(406) 591-9000</h4>
+                    <a href="tel:+1-406-591-9000">
+                        <i class="fa fa-mobile fa-2x" id="phone"></i>&nbsp; Call Us to find out more&#33;</a>
+                    <p>We will be happy to answer any questions.</p>
+                </div>
+                <div class="col-xs-12 col-md-4 text-center">
+                    <i class="fa fa-map-marker fa-2x" id="directions"></i>
+                    <h4>Come Join Us!</h4>
+                    <h4>
+                        <a href="https://goo.gl/maps/9FNh8wJVV572" target="_blank">
+                            <i class="fa fa-map-marker fa-lg" id="directions"></i>&nbsp;Directions</a>
+                    </h4>
+
+                </div>
+                <div class="col-xs-12 col-md-4 text-center">
+                    <i class="fa fa-facebook-official fa-2x facebook"></i>
+                    <a href="https://www.facebook.com/Martial-Arts-Academy-of-Billings-123484254472217/" target="_blank">
+                        <h4>See Us on Facebook!</h4>
+                    </a>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+    </footer>
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+
+<!-- </html> -->

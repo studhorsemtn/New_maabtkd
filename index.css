@@ -28,7 +28,7 @@ section {
 
 /* ========  NavBar  ======== */
 
-#facebook {
+.facebook {
     color: #3b5998;
 }
 
@@ -74,6 +74,10 @@ section {
     }
 }
 
+.navbar-brand img {
+    padding: 2px 0 0 0;
+}
+
 .navbar-right {
     margin: 5px 15px;
 }
@@ -99,7 +103,8 @@ section {
     background-size: 100% 100%;
     border: 2px solid black;
     border-radius: 10px;
-    margin: 0 0 10px 0;
+    box-shadow: 5px 5px 5px black;
+    margin: 10px 0 15px 0;
 }
 
 #hometext {
@@ -110,7 +115,7 @@ section {
 }
 
 #hometext h1 {
-    padding: 5px 0 5px 0;
+    padding: 10px 0 10px 0;
     font-size: 3rem;
 }
 
@@ -124,15 +129,19 @@ section {
 
 /* =======  Section About  ======= */
 
-.about,
 .panel {
     background: black;
     color: white;
     font-weight: bolder;
 }
 
-.about h1 {
+.about {
     padding: 9% 0;
+    color: white;
+    background: -webkit-linear-gradient(black, grey, black);
+    background: -moz-linear-gradient(black, grey, black);
+    background: -o-linear-gradient(black, grey, black);
+    background: linear-gradient(black, grey, black);
 }
 
 #training {
@@ -225,15 +234,80 @@ section {
 /* =======   End Taekwondo/Judo  ======= */
 
 
+/* ========  Schedule  ======== */
+
+#schedule {
+    color: black;
+    font-weight: bolder;
+}
+
+#schedule th {
+    background: black;
+}
+
+#schedule h1,
+thead {
+    color: white;
+}
+
+#schedule th,
+tr {
+    border: 2px solid black;
+    text-align: center;
+}
+
+#schedule hr {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.00), rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.00));
+}
+
+
+/* ========  End Schedule  ======== */
+
+
+/* Section Login */
+
+.login {
+    color: #C25E01;
+    text-align: center;
+    text-shadow: -.05em -.05em .2em rgb(0, 0, 0);
+    margin-bottom: 15%;
+}
+
+.login h4 {
+    color: white;
+}
+
+.loginForm {
+    max-width: 350px;
+    height: auto;
+    background: rgb(78, 75, 75);
+    margin: 0 auto;
+    border-radius: 5%;
+}
+
+input[type='password'] {
+    margin: 15px;
+}
+
+button[type="submit"] {
+    margin-bottom: 15px;
+}
+
+
+/* End Section Login */
+
+
 /* =======  Footer  ======== */
 
 footer {
     background: #656363;
     color: #DA700A;
+    bottom: 0;
 }
 
 footer i,
-footer p {
+footer p,
+footer a {
     color: white;
     text-align: center;
 }
