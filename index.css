@@ -7,7 +7,7 @@ body {
     background: -moz-linear-gradient(black, grey, black);
     background: -o-linear-gradient(black, grey, black);
     background: linear-gradient(black, grey, black);
-    padding-top: 70px;
+    padding-top: 65px;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
 }
@@ -22,9 +22,7 @@ section {
     padding: 2.5rem;
 }
 
-
 /* =======  End Global  ======== */
-
 
 /* ========  NavBar  ======== */
 
@@ -56,10 +54,10 @@ section {
         border-width: 0 0 1px;
     }
     .navbar-collapse.collapse {
-        display: none!important;
+        display: none !important;
     }
     .navbar-nav {
-        float: none!important;
+        float: none !important;
         margin-top: 7.5px;
     }
     .navbar-nav>li {
@@ -86,9 +84,7 @@ section {
     color: white;
 }
 
-
 /* ========  End NavBar  ======== */
-
 
 /* ========= Home  ========= */
 
@@ -115,7 +111,7 @@ section {
 }
 
 #hometext h1 {
-    padding: 10px 0 10px 0;
+    padding: 65px 0 10px 0;
     font-size: 3rem;
 }
 
@@ -123,9 +119,7 @@ section {
     font-size: 2rem;
 }
 
-
 /* =======  End Jumbotron Home  ======== */
-
 
 /* =======  Section About  ======= */
 
@@ -148,9 +142,7 @@ section {
     padding: 15px 15px 37px 15px;
 }
 
-
 /* =======  End About  ======= */
-
 
 /* ========  Instructors  ======= */
 
@@ -192,9 +184,7 @@ section {
     margin: 0 auto;
 }
 
-
 /* ========  End Instructors  ======= */
-
 
 /* =======  Taekwondo/Judo  ======= */
 
@@ -230,9 +220,7 @@ section {
     margin: 0 auto;
 }
 
-
 /* =======   End Taekwondo/Judo  ======= */
-
 
 /* ========  Schedule  ======== */
 
@@ -260,9 +248,7 @@ tr {
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0.00), rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.00));
 }
 
-
 /* ========  End Schedule  ======== */
-
 
 /* Section Login */
 
@@ -293,14 +279,12 @@ button[type="submit"] {
     margin-bottom: 15px;
 }
 
-
 /* End Section Login */
-
 
 /* =======  Footer  ======== */
 
 footer {
-    background: #656363;
+    background: #000000;
     color: #DA700A;
     bottom: 0;
 }
