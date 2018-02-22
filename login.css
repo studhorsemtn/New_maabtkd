@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Baskerville Old Face', serif;
     font-size: 1.65em;
@@ -8,11 +13,13 @@ body {
     padding-top: 70px;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
-    height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 html {
-    height: 100vh;
+    height: 100%;
 }
 
 hr {
@@ -25,9 +32,7 @@ section {
     padding: 2.5rem;
 }
 
-
 /* =======  End Global  ======== */
-
 
 /* ========  NavBar  ======== */
 
@@ -59,10 +64,10 @@ section {
         border-width: 0 0 1px;
     }
     .navbar-collapse.collapse {
-        display: none!important;
+        display: none !important;
     }
     .navbar-nav {
-        float: none!important;
+        float: none !important;
         margin-top: 7.5px;
     }
     .navbar-nav>li {
@@ -89,9 +94,7 @@ section {
     color: white;
 }
 
-
 /* ========  End NavBar  ======== */
-
 
 /* Section Login */
 
@@ -99,7 +102,7 @@ section {
     color: #C25E01;
     text-align: center;
     text-shadow: -.05em -.05em .2em rgb(0, 0, 0);
-    padding-bottom: 15%;
+    flex: 1 0 auto;
 }
 
 .login h4 {
@@ -122,16 +125,13 @@ button[type="submit"] {
     margin-bottom: 15px;
 }
 
-
 /* End Section Login */
-
 
 /* =======  Footer  ======== */
 
 footer {
     background: #000000;
     color: #DA700A;
-    bottom: 0;
 }
 
 footer i,

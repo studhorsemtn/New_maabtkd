@@ -7,7 +7,7 @@ body {
     background: -moz-linear-gradient(black, grey, black);
     background: -o-linear-gradient(black, grey, black);
     background: linear-gradient(black, grey, black);
-    padding-top: 70px;
+    padding-top: 65px;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
 }
@@ -22,9 +22,7 @@ section {
     padding: 2.5rem;
 }
 
-
 /* =======  End Global  ======== */
-
 
 /* ========  NavBar  ======== */
 
@@ -56,10 +54,10 @@ section {
         border-width: 0 0 1px;
     }
     .navbar-collapse.collapse {
-        display: none!important;
+        display: none !important;
     }
     .navbar-nav {
-        float: none!important;
+        float: none !important;
         margin-top: 7.5px;
     }
     .navbar-nav>li {
@@ -86,9 +84,7 @@ section {
     color: white;
 }
 
-
 /* ========  End NavBar  ======== */
-
 
 /* ========= Home  ========= */
 
@@ -99,7 +95,7 @@ section {
 #home {
     height: 350px;
     color: rgb(255, 255, 255);
-    background: url('Images/maabtkdBackground.png') no-repeat;
+    background: url('Images/newBackground.png') no-repeat;
     background-size: 100% 100%;
     border: 2px solid black;
     border-radius: 10px;
@@ -115,7 +111,7 @@ section {
 }
 
 #hometext h1 {
-    padding: 10px 0 10px 0;
+    padding: 65px 0 10px 0;
     font-size: 3rem;
 }
 
@@ -123,16 +119,36 @@ section {
     font-size: 2rem;
 }
 
-
 /* =======  End Jumbotron Home  ======== */
-
 
 /* =======  Section About  ======= */
 
-.panel {
+.col-container {
     background: black;
     color: white;
     font-weight: bolder;
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+}
+
+.col {
+    flex: 1;
+    padding: 16px;
+    border: 1px solid #1d1dc9;
+    border-radius: 4px;
+}
+
+@media only screen and (max-width: 767px) {
+    .col {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+        margin-bottom: 5px;
+    }
 }
 
 .about {
@@ -144,13 +160,12 @@ section {
     background: linear-gradient(black, grey, black);
 }
 
+/* 
 #training {
-    padding: 15px 15px 37px 15px;
-}
-
+    padding: 0 15px 0 15px;
+} */
 
 /* =======  End About  ======= */
-
 
 /* ========  Instructors  ======= */
 
@@ -192,9 +207,7 @@ section {
     margin: 0 auto;
 }
 
-
 /* ========  End Instructors  ======= */
-
 
 /* =======  Taekwondo/Judo  ======= */
 
@@ -230,9 +243,7 @@ section {
     margin: 0 auto;
 }
 
-
 /* =======   End Taekwondo/Judo  ======= */
-
 
 /* ========  Schedule  ======== */
 
@@ -260,9 +271,7 @@ tr {
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0.00), rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.00));
 }
 
-
 /* ========  End Schedule  ======== */
-
 
 /* Section Login */
 
@@ -270,7 +279,6 @@ tr {
     color: #C25E01;
     text-align: center;
     text-shadow: -.05em -.05em .2em rgb(0, 0, 0);
-    margin-bottom: 15%;
 }
 
 .login h4 {
@@ -293,16 +301,13 @@ button[type="submit"] {
     margin-bottom: 15px;
 }
 
-
 /* End Section Login */
-
 
 /* =======  Footer  ======== */
 
 footer {
-    background: #656363;
+    background: #000000;
     color: #DA700A;
-    bottom: 0;
 }
 
 footer i,
