@@ -95,7 +95,7 @@ section {
 #home {
     height: 350px;
     color: rgb(255, 255, 255);
-    background: url('Images/maabtkdBackground.png') no-repeat;
+    background: url('Images/newBackground.png') no-repeat;
     background-size: 100% 100%;
     border: 2px solid black;
     border-radius: 10px;
@@ -123,10 +123,32 @@ section {
 
 /* =======  Section About  ======= */
 
-.panel {
+.col-container {
     background: black;
     color: white;
     font-weight: bolder;
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+}
+
+.col {
+    flex: 1;
+    padding: 16px;
+    border: 1px solid #1d1dc9;
+    border-radius: 4px;
+}
+
+@media only screen and (max-width: 767px) {
+    .col {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+        margin-bottom: 5px;
+    }
 }
 
 .about {
@@ -138,9 +160,10 @@ section {
     background: linear-gradient(black, grey, black);
 }
 
+/* 
 #training {
-    padding: 15px 15px 37px 15px;
-}
+    padding: 0 15px 0 15px;
+} */
 
 /* =======  End About  ======= */
 
@@ -256,7 +279,6 @@ tr {
     color: #C25E01;
     text-align: center;
     text-shadow: -.05em -.05em .2em rgb(0, 0, 0);
-    margin-bottom: 15%;
 }
 
 .login h4 {
@@ -286,7 +308,6 @@ button[type="submit"] {
 footer {
     background: #000000;
     color: #DA700A;
-    bottom: 0;
 }
 
 footer i,
