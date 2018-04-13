@@ -82,8 +82,8 @@ section {
     }
 }
 
-.navbar-brand img {
-    padding: 2px 0 0 0;
+.navbar-brand {
+    padding: 10px 15px;
 }
 
 .navbar-right {
@@ -132,6 +132,7 @@ button[type="submit"] {
 footer {
     background: #000000;
     color: #DA700A;
+    padding-top: 10px;
 }
 
 footer i,
